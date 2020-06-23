@@ -1,0 +1,65 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+        <!-- Hero Start -->
+        <div class="slider-area ">
+            <div class="slider-height2 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-cap">
+                                <h2>About me</h2>
+                                <nav aria-label="breadcrumb ">
+                                    <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="{% url 'profile' %}">Profile</a></li> 
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+        <!-- About Me Start -->
+        <div class="about-me ">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="about-me-img mb-30">
+                            <img src="{% static 'assets/img/about/Tapan-Kanti-Sarkar.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <div style="margin-top: 90px;">
+                            <h1 >Tapan Kanti Sarkar</h1> 
+                            <h5>Founder President CTO Forum Bangladesh.</h5>
+                            
+                        </div>
+                    </div>
+                </div>
+                <h6 class="text-justify">
+                    Mr. Tapan Kanti Sarkar is the founder president of CTO Forum Bangladesh and a moderator of Information Security Alliance.He is a member of American Computer Society, member of UK Computers & Law and a Fellow member of SAARC CTO Forum.
+
+Mr. Sarkar has more than 30 years of experience in the field of Information and Communication Technology. He did his graduation with Honors from Chittagong University and completed Masters from Dhaka University and studied MS in Computer Science from USA. He started his career in 1980 as a Programmer in a multinational pharmaceutical company, named Bristol-Myers Squibb with overseas assignment in Egypt & USA. Then he worked as MIS Manager at Beximco Group and worked as Head of IT at IFIC Bank. He was with NCC Bank as Chief Technology Officer upto December 2015.
+
+He has professional certifications from some world renowned IT Companies, like, Microsoft, USA on “Building Client and Server Application & Programming using Visual Basics”, certification from IBM, USA on “RPG(Report Program Generator) II programming”, certification on “Enterprise Network Management and DEC OSF/1 Network Management” from Digital Equipment Corporation(DEC), USA, “ICT Innovation in Banking” from AOTS, Japan, “Network Support & Services” from Novell, Singapore, “Project Management Professional (PMP)” from Bangalore, India.
+
+He has long experience in strategic alignment of Business and Information Technology by applying most cost effective & innovative techniques. He has shown cross functional team leadership and has technical exposure on Enterprise Resource Planning (ERP) and Process Automation. Some of his expertises are Formulation of Strategic IT Security Policy based on ISO27000, Ensuring IT Compliance in IT Service Delivery, IT Infrastructure development, i.e. Data Center, Disaster Recovery Site, Cloud Computing Infrastructure, WAN, LAN installation etc.
+
+He has delivered many key note papers on various critical IT Issues like Enterprise ICT Security, Online Fraud Prevention; Information Security (IS) Audit & Control, Electronic Banking & its Prospects in different IT Seminars/workshops and in training institutes within the country and abroad as well.
+
+Many of his articles are published in all reputed newspaper. His most recent achivement is prepare 1st concept of National Data Center for Ministry of ICT.
+
+Now he is the Managing Director of ADN Edu Service Ltd.
+                </h6>
+            </div>
+        </div>
+        <!-- About Me End -->
+        <br><br><br>
+        
+        {% endblock %}

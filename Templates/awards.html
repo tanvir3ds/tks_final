@@ -1,0 +1,53 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+        <!-- Hero Start -->
+        <div class="slider-area ">
+            <div class="slider-height2 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-cap">
+                                <h2>Awards</h2>
+                                <nav aria-label="breadcrumb ">
+                                    <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="{% url 'awards' %}">Awards</a></li> 
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+        <br><br><br>
+        <div class="container ">
+
+
+            <article class="blog_item">
+                <div class="blog_item_img">
+                    <img class="card-img rounded-0" src=""
+                        alt="Award Image ">
+                    
+                </div>
+
+                <div class="blog_details">
+                    <a class="d-inline-block" href="blog_details.html">
+                        <h2></h2>
+                    </a>
+                    <p class="text-justify">Description</p>
+                    
+                </div>
+            </article>
+
+       
+            
+        </div>
+
+{% endblock %}

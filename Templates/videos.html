@@ -1,0 +1,63 @@
+
+
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+        <!-- Hero Start -->
+        <div class="slider-area ">
+            <div class="slider-height2 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-cap">
+                                <h2>Videos</h2>
+                                <nav aria-label="breadcrumb ">
+                                    <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="{% url 'videos' %}">Videos</a></li> 
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+        <br><br><br>
+        <!-- youtube start -->
+
+
+
+        <div class="container">
+
+        
+            <div class="row">
+
+                <!-- {% for intv in interviews %} -->
+      
+              <div class="col-md-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ intv.Embed_Youtube_Code }}" frameborder="0" -->
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+
+              <!-- {% endfor %} -->
+      
+            </div>
+      
+      
+      
+      
+          </div> <!-- container -->
+              <!-- youtube end -->
+              <br><br><br>
+      
+              
+
+
+{% endblock %}
