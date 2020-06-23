@@ -30,6 +30,12 @@
 
         <!-- Code Starting Here -->
 
+        {% for tes_crount in object_tests %}
+        <img src="{{ tes_crount.img.url }}" alt="Picture">
+        <h2>{{ tes_crount.title }}</h2>
+          
+        {% endfor %}
+
         
 
 {% endblock %}

@@ -28,33 +28,40 @@
 
 
 
-
-        <!-- Code Starting Here -->
-
-        <div class="container"><br><br><br>
-
-            <table class="table table-hover">
-                <thead>
-                  <tr>
-                    <th scope="col">Subject</th>
-                    <th scope="col">Source</th>
-                    <th scope="col">Date</th>
-                    <th scope="col">Link</th>
-                  </tr>
-                </thead>
-
-                <tbody>
-
-                  <tr>
-                    <th scope="row">subject</th>
-                    <td>sourch</td>
-                    <td>date</td>
-                    <td>link</td>
-                  </tr>
-                  
-                </tbody>
-              </table>
-              <br><br><br>      
-        </div>
-
-{% endblock %}
+        
+                <!-- Code Starting Here -->
+        
+                <div class="container"><br><br><br>
+        
+                    <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            
+                            <th scope="col">Subject</th>
+                            <th scope="col">Source</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Link</th>
+                          </tr>
+                        </thead>
+        
+                        <tbody>
+                          
+                          {% for press in presses %}  
+                          <tr>
+                            
+                            <td>{{ press.Subject }}</td>
+                            <td>{{ press.Source }}</td>
+                            <td>{{ press.Date }}</td>
+                            <td>{{ press.Link }}</td>
+                    
+        
+                          </tr>
+                          {% endfor %}
+        
+        
+                        </tbody>
+                      </table>
+                      <br><br><br>      
+                </div>
+        
+        {% endblock %}

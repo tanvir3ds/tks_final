@@ -29,22 +29,29 @@
         <br><br><br>
         <div class="container ">
 
+            {% for award in awards %}
+        
+          
+       
 
             <article class="blog_item">
                 <div class="blog_item_img">
-                    <img class="card-img rounded-0" src=""
+                    <img class="card-img rounded-0" src="{{award.image.url}}"
                         alt="Award Image ">
                     
                 </div>
 
                 <div class="blog_details">
                     <a class="d-inline-block" href="blog_details.html">
-                        <h2></h2>
+                        <h2>{{award.title}}</h2>
                     </a>
-                    <p class="text-justify">Description</p>
+                    <p class="text-justify">{{award.description}}</p>
                     
                 </div>
+
             </article>
+
+            {% endfor %}
 
        
             

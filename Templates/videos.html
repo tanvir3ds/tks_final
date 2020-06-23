@@ -30,34 +30,33 @@
         <br><br><br>
         <!-- youtube start -->
 
-
-
-        <div class="container">
-
         
-            <div class="row">
-
-                <!-- {% for intv in interviews %} -->
-      
-              <div class="col-md-6">
-                <div class="embed-responsive embed-responsive-16by9">
-                  <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ intv.Embed_Youtube_Code }}" frameborder="0" -->
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-              </div>
-
-              <!-- {% endfor %} -->
-      
-            </div>
-      
-      
-      
-      
-          </div> <!-- container -->
-              <!-- youtube end -->
-              <br><br><br>
-      
+                <div class="container">
+        
+                
+                    <div class="row">
+        
+                        {% for intv in videos %}
               
-
-
-{% endblock %}
+                      <div class="col-md-6">
+                        <div class="embed-responsive embed-responsive-16by9">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ intv.embed_youtube_code }}" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
+        
+                      {% endfor %}
+              
+                    </div>
+              
+              
+              
+              
+                  </div> <!-- container -->
+                      <!-- youtube end -->
+                      <br><br><br>
+              
+                      
+        
+        
+        {% endblock %}
