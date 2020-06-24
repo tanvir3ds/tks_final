@@ -1,4 +1,6 @@
 from django.contrib import admin
+admin.site.site_header = 'Tapan Kanti Sarkar'
+
 
 # Register your models here.
 
