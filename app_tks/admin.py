@@ -3,6 +3,7 @@ admin.site.site_header = 'Tapan Kanti Sarkar'
 
 
 # Register your models here.
+#Admin registration model
 
 from .models import TestClassTrial
 admin.site.register(TestClassTrial)
